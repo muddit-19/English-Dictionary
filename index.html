@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Dictionary</title>
+    <link rel="icon" href="icon.ico">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bbc5b12acf.js" crossorigin="anonymous"></script>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">English Dictionary</h1>
+        <div class="search">
+            <input type="text" class="input" id="input" placeholder="Search">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <h3 class="info-text" id="info-text">Search a Word</h3>
+        <div id="meaning-container">
+            <div class="word">
+                <h4>Word: <span class="title" id="title"></span></h4>
+                <button class="audio" onclick="playsound()"><i class="fa-solid fa-volume-high"></i></button>
+            </div>
+            <h4>Meaning: <span class="meaning" id="meaning"></span></h4>
+            <audio src="" id="audio"></audio>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
